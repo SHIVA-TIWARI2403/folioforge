@@ -4,11 +4,11 @@ import { FormEditor } from './components/FormEditor';
 import { PortfolioPreview } from './components/PortfolioPreview';
 import { ResumePreview } from './components/ResumePreview';
 import { ProfileData } from './types';
-import { SOFTWARE_ENGINEER_SAMPLE } from './data/sampleProfiles';
+import { SHIVA_TIWARI_SAMPLE } from './data/sampleProfiles';
 
 export function App() {
   const [profileData, setProfileData] = useState<ProfileData>(() => {
-    const saved = localStorage.getItem('folioforge_profile_data');
+    const saved = localStorage.getItem('folioforge_profile_data_v2');
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -16,14 +16,14 @@ export function App() {
         // fallback
       }
     }
-    return SOFTWARE_ENGINEER_SAMPLE;
+    return SHIVA_TIWARI_SAMPLE;
   });
 
   const [viewMode, setViewMode] = useState<'portfolio' | 'resume'>('portfolio');
   const [layoutMode, setLayoutMode] = useState<'split' | 'editor' | 'preview'>('split');
 
   useEffect(() => {
-    localStorage.setItem('folioforge_profile_data', JSON.stringify(profileData));
+    localStorage.setItem('folioforge_profile_data_v2', JSON.stringify(profileData));
   }, [profileData]);
 
   return (

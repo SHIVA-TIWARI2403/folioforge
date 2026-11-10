@@ -3,7 +3,7 @@ import { Layers, Printer, Download, Upload, Sparkles, RefreshCw, Eye, Edit3, Mon
 import confetti from 'canvas-confetti';
 import { ProfileData } from '../types';
 import { printResume, exportSinglePageHtml, exportJson } from '../utils/exportHelpers';
-import { SOFTWARE_ENGINEER_SAMPLE, BLANK_PROFILE } from '../data/sampleProfiles';
+import { SHIVA_TIWARI_SAMPLE, BLANK_PROFILE } from '../data/sampleProfiles';
 
 interface HeaderProps {
   data: ProfileData;
@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({
   onToggleLayoutMode,
 }) => {
   const handleLoadSample = () => {
-    onUpdateData(SOFTWARE_ENGINEER_SAMPLE);
+    onUpdateData(SHIVA_TIWARI_SAMPLE);
     confetti({
       particleCount: 50,
       spread: 60,
