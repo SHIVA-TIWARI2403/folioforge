@@ -1,46 +1,43 @@
-# 🍃 FolioForge — Minimalist Glassmorphic Portfolio & Resume Builder
+# FolioForge
 
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-
-A modern, dual-mode web platform that allows anyone to design, customize, and export interactive **Web Portfolios** and **ATS-Optimized Resumes** in real-time.
-
-Built with an elegant **Forest Green & Maroon** glassmorphism aesthetic and refined minimalism.
+A dual-mode web application for designing interactive developer portfolios and exporting ATS-friendly resumes in real-time.
 
 ---
 
-## ✨ Features
+## Overview
 
-- 🖥️ **Live Interactive Web Portfolio**: Real-time rendering of personal projects, experience, skills, and contact hub.
-- 📄 **ATS-Friendly Clean Resume**: Executive A4 formatted resume designed for high recruiter readability.
-- 🖨️ **1-Click PDF Export / Print**: Clean print styling with `@media print` removing all UI chrome for a crisp document.
-- 🌐 **Export Portable HTML**: Downloads a self-contained, standalone responsive HTML file ready to host on GitHub Pages or Netlify.
-- 💾 **JSON Backup & Import**: Save work locally or migrate between devices.
-- 🎨 **Forest Green & Maroon Glassmorphism**: Frosted glass panels (`backdrop-blur-xl`), emerald pine and royal maroon glow accents.
-- ⚡ **Auto-Save**: Automatic synchronization with `localStorage`.
-- 🚀 **Sample Profile Loader**: Instant 1-click loading of complete software engineer presets.
+FolioForge lets users enter profile data once and switch seamlessly between two representations:
+1. **Interactive Web Portfolio:** A responsive, modern single-page portfolio highlighting projects, experience timeline, tech skills, and contact links.
+2. **Clean A4 Resume:** A structured, print-optimized resume styled with `@media print` rules for clean PDF exports with zero browser margins or UI clutter.
 
 ---
 
-## 🛠️ Stack
+## Features
 
-- **Framework**: React 18, TypeScript, Vite
-- **Styling**: Tailwind CSS, PostCSS, Autoprefixer
-- **Icons & Polish**: Lucide React, Canvas Confetti
-- **Typography**: Plus Jakarta Sans, Playfair Display, JetBrains Mono
+- **Live Split-Screen Preview:** See changes reflect immediately across both portfolio view and resume layout.
+- **Client-Side Export:** Export to clean PDF via native print dialog or download a self-contained portable HTML file.
+- **Local Persistence:** Automatically syncs form state with browser `localStorage`, with support for JSON export/import backups.
+- **Glassmorphic Aesthetic:** Styled with Tailwind CSS, backdrop filters, and subtle emerald/maroon accent palettes.
 
 ---
 
-## 🚀 Getting Started
+## Tech Stack
+
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS, PostCSS
+- **Icons:** Lucide React
+
+---
+
+## Local Development
 
 ```bash
 # Install dependencies
 npm install
 
-# Run local development server
+# Start development server
 npm run dev
 
-# Build for production
+# Create production build
 npm run build
 ```
